@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "@/app/components/navbar";
 import Hero from "@/app/components/hero";
 import StatsSection from "@/app/components/stat";
 import VisionSection from "@/app/components/visionSection";
