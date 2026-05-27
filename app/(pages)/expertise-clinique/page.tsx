@@ -5,13 +5,13 @@ export default function ExpertiseClinique() {
     return (
         <main className="mt-20">
             {/* Hero Section */}
-            <header className="relative py-24 md:py-32 overflow-hidden bg-surface-container-lowest">
+            <header className="relative py-24 md:py-32 overflow-hidden bg-surface-container-lowest gradient-mesh">
                 <div className="max-w-container-max mx-auto px-margin-desktop relative z-10">
                     <div className="max-w-2xl">
             <span className="font-label-md text-label-md text-primary uppercase tracking-widest block mb-4">
               Engagement & Rigueur
             </span>
-                        <h1 className="font-display-lg text-display-lg md:text-display-lg text-primary mb-6">
+                        <h1 className="font-display-lg text-display-lg md:text-display-lg text-primary mb-6 gradient-text">
                             Expertise Clinique & Parcours
                         </h1>
                         <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
@@ -44,7 +44,7 @@ export default function ExpertiseClinique() {
 
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                     {/* Urgences */}
-                    <div className="md:col-span-8 group expertise-card bg-surface-container-low border border-outline-variant/20 rounded-xl p-8 relative overflow-hidden transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)]">
+                    <div className="md:col-span-8 group expertise-card bg-surface-container-low border border-outline-variant/20 rounded-xl p-8 relative overflow-hidden transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] gradient-surface gradient-border">
                         <div className="flex flex-col h-full relative z-10">
               <span className="material-symbols-outlined text-primary text-4xl mb-6 card-icon">
                 medical_services
@@ -71,7 +71,7 @@ export default function ExpertiseClinique() {
                     </div>
 
                     {/* Coordination */}
-                    <div className="md:col-span-4 expertise-card bg-white border border-outline-variant/20 rounded-xl p-8 transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)]">
+                    <div className="md:col-span-4 expertise-card bg-white border border-outline-variant/20 rounded-xl p-8 transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] gradient-border">
             <span className="material-symbols-outlined text-primary text-4xl mb-6 card-icon">
               account_tree
             </span>
@@ -82,7 +82,7 @@ export default function ExpertiseClinique() {
                     </div>
 
                     {/* Éducation */}
-                    <div className="md:col-span-4 expertise-card bg-white border border-outline-variant/20 rounded-xl p-8 transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)]">
+                    <div className="md:col-span-4 expertise-card bg-white border border-outline-variant/20 rounded-xl p-8 transition-all hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] gradient-border">
             <span className="material-symbols-outlined text-primary text-4xl mb-6 card-icon">
               school
             </span>

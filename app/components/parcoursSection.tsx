@@ -24,7 +24,7 @@ export default function ParcoursSection() {
                                 <span className="font-label-md text-primary">2020 — Présent</span>
                                 <h4 className="font-headline-sm text-[18px] text-primary mt-2">CHRU de Lille</h4>
                             </div>
-                            <div className="md:col-span-3 bg-surface p-8 rounded-2xl border border-outline-variant/30">
+                            <div className="md:col-span-3 bg-surface p-8 rounded-2xl border border-outline-variant/30 glass-effect glass-effect-hover animate-scale-in shine-wrap">
                                 <div className="flex justify-between items-start mb-4">
                                     <h3 className="font-headline-sm text-headline-sm text-primary">Infirmier en Réanimation Polyvalente</h3>
                                     <div className="flex gap-2">
@@ -50,7 +50,7 @@ export default function ParcoursSection() {
                                 <span className="font-label-md text-secondary">2016 — 2020</span>
                                 <h4 className="font-headline-sm text-[18px] text-primary mt-2">Hôpital Européen</h4>
                             </div>
-                            <div className="md:col-span-3 bg-surface p-8 rounded-2xl border border-outline-variant/30">
+                            <div className="md:col-span-3 bg-surface p-8 rounded-2xl border border-outline-variant/30 glass-effect glass-effect-hover animate-scale-in">
                                 <div className="flex justify-between items-start mb-4">
                                     <h3 className="font-headline-sm text-headline-sm text-primary">Service des Urgences &amp; SMUR</h3>
                                 </div>

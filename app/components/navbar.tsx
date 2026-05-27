@@ -6,10 +6,10 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const navigationItems = [
-        { href: "#home", label: "Accueil" },
-        { href: "#expertise", label: "Expertise" },
-        { href: "#parcours", label: "Parcours" },
-        { href: "#temoignages", label: "Témoignages" },
+        { href: "/", label: "Accueil" },
+        { href: "/expertise-clinique", label: "Expertise clinique" },
+        { href: "/methodologie-soins", label: "Méthodologie soins" },
+        { href: "/#temoignages", label: "Témoignages" },
     ]
 
     return (
@@ -34,9 +34,9 @@ export default function Header() {
                         </Link>
                     ))}
 
-                    <button className="ml-4 bg-primary text-on-primary px-6 py-2 rounded-xl font-label-md hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md">
+                    <Link href="/#contact" className="ml-4 gradient-cta px-6 py-2 rounded-xl font-label-md transition-all shadow-md hover:opacity-95 animate-pulse-glow">
                         Contact
-                    </button>
+                    </Link>
                 </div>
 
                 <button
@@ -69,12 +69,13 @@ export default function Header() {
                                     {item.label}
                                 </Link>
                             ))}
-                            <button
-                                className="mt-2 bg-primary text-on-primary px-6 py-3 rounded-xl font-label-md shadow-md"
+                            <Link
+                                href="/#contact"
+                                className="mt-2 gradient-cta px-6 py-3 rounded-xl font-label-md shadow-md text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Contact
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 ) : null}

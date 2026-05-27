@@ -9,9 +9,9 @@ export default function TestimonialsSection() {
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
                 </div>
                 <div className="grid md:grid-cols-3 gap-gutter">
-                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative">
+                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative glass-effect glass-effect-hover animate-scale-in">
                         <span className="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
-                        <p className="font-body-md italic text-on-surface mb-8 relative z-10">
+                        <p className="font-body-md italic text-on-surface mb-8 relative z-10 neon-glow">
                             "Un professionnel d'une rigueur exemplaire dont le calme en situation de crise est un atout majeur pour l'équipe de réanimation."
                         </p>
                         <div className="flex items-center gap-4">
@@ -22,9 +22,9 @@ export default function TestimonialsSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative">
+                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative glass-effect glass-effect-hover animate-scale-in">
                         <span className="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
-                        <p className="font-body-md italic text-on-surface mb-8 relative z-10">
+                        <p className="font-body-md italic text-on-surface mb-8 relative z-10 neon-glow">
                             "Au-delà de ses compétences techniques, sa capacité d'écoute et son empathie envers les familles font de lui un soignant d'exception."
                         </p>
                         <div className="flex items-center gap-4">
@@ -35,9 +35,9 @@ export default function TestimonialsSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative">
+                    <div className="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/20 relative glass-effect glass-effect-hover animate-scale-in">
                         <span className="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-8">format_quote</span>
-                        <p className="font-body-md italic text-on-surface mb-8 relative z-10">
+                        <p className="font-body-md italic text-on-surface mb-8 relative z-10 neon-glow">
                             "Pédagogue et investi, il a su transformer notre service en intégrant de nouveaux protocoles de soins innovants."
                         </p>
                         <div className="flex items-center gap-4">

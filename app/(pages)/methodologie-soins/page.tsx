@@ -5,8 +5,8 @@ export default function MethodologieSoins() {
     return (
         <main className="pt-20">
             {/* Hero Section */}
-            <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
-                <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 animate-fade-in">
+            <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center gradient-mesh rounded-3xl">
+                <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 gradient-text">
                     Rigueur Méthodologique.<br />Résultats Humains.
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
@@ -25,7 +25,7 @@ export default function MethodologieSoins() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
                         {/* Step 1 */}
                         <div className="group">
-                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300">
+                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300 gradient-border">
                                 <div className="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-primary">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                     analytics
@@ -40,7 +40,7 @@ export default function MethodologieSoins() {
 
                         {/* Step 2 */}
                         <div className="group">
-                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300">
+                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300 gradient-border">
                                 <div className="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-primary">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                     assignment
@@ -55,7 +55,7 @@ export default function MethodologieSoins() {
 
                         {/* Step 3 */}
                         <div className="group">
-                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300">
+                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300 gradient-border">
                                 <div className="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-primary">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                     medical_services
@@ -70,7 +70,7 @@ export default function MethodologieSoins() {
 
                         {/* Step 4 */}
                         <div className="group">
-                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300">
+                            <div className="flex flex-col h-full bg-white border border-outline-variant/30 rounded-xl p-8 hover:shadow-[0_4px_12px_rgba(26,54,93,0.08)] transition-all duration-300 gradient-border">
                                 <div className="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-primary">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                     verified
@@ -178,7 +178,7 @@ export default function MethodologieSoins() {
             {/* Final CTA */}
             <section className="py-section-gap">
                 <div className="max-w-4xl mx-auto px-margin-mobile text-center">
-                    <div className="bg-surface-container-low rounded-3xl p-12 md:p-20 border border-outline-variant/20 shadow-[0_4px_12px_rgba(26,54,93,0.08)]">
+                    <div className="bg-surface-container-low rounded-3xl p-12 md:p-20 border border-outline-variant/20 shadow-[0_4px_12px_rgba(26,54,93,0.08)] gradient-surface gradient-border">
                         <h2 className="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md text-primary mb-8">
                             Collaborons pour des soins d'exception
                         </h2>
