@@ -1,26 +1,119 @@
+/* 1. TOUS LES IMPORTS DOIVENT ÊTRE EN HAUT */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 2. Ensuite, la configuration du Thème Tailwind v4 */
+@theme {
+  /* Configuration des couleurs (Parfait, rien à changer ici) */
+  --color-secondary-fixed-dim: #bcc8cf;
+  --color-outline-variant: #c4c6cf;
+  --color-on-primary-container: #86a0cd;
+  --color-primary-fixed: #d6e3ff;
+  --color-on-tertiary-container: #949fb4;
+  --color-secondary-container: #d5e2e9;
+  --color-primary-fixed-dim: #adc7f7;
+  --color-secondary-fixed: #d8e4eb;
+  --color-surface-tint: #455f88;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-fixed-variant: #3c494e;
+  --color-surface-container-low: #f1f4f6;
+  --color-error: #ba1a1a;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-fixed-dim: #bcc7dd;
+  --color-on-background: #181c1e;
+  --color-on-error-container: #93000a;
+  --color-tertiary: #162132;
+  --color-surface-container-high: #e5e9eb;
+  --color-tertiary-fixed: #d8e3fa;
+  --color-surface-container: #ebeef0;
+  --color-on-primary-fixed-variant: #2d476f;
+  --color-on-surface: #181c1e;
+  --color-on-primary: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-tertiary-fixed-variant: #3c475a;
+  --color-on-surface-variant: #43474e;
+  --color-outline: #74777f;
+  --color-inverse-surface: #2d3133;
+  --color-background: #f7fafc;
+  --color-secondary: #546066;
+  --color-on-primary-fixed: #001b3c;
+  --color-primary: #002045;
+  --color-inverse-on-surface: #eef1f3;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-fixed: #111c2c;
+  --color-surface-dim: #d7dadc;
+  --color-on-secondary-container: #58646a;
+  --color-surface-variant: #e0e3e5;
+  --color-surface-bright: #f7fafc;
+  --color-tertiary-container: #2b3648;
+  --color-inverse-primary: #adc7f7;
+  --color-primary-container: #1a365d;
+  --color-on-secondary-fixed: #111d22;
+  --color-surface: #f7fafc;
+  --color-surface-container-highest: #e0e3e5;
+
+  /* Configuration des arrondis */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Configuration des espacements */
+  --spacing-base: 8px;
+  --spacing-margin-mobile: 20px;
+  --spacing-section-gap: 80px;
+  --spacing-margin-desktop: 64px;
+  --spacing-container-max: 1200px;
+  --spacing-gutter: 24px;
+
+  /* CORRECTION 1 : Familles de Polices (Font Families)
+    En Tailwind v4, on utilise la notation par défaut pour les alias de police.
+  */
+  --font-display-lg: "Literata", serif;
+  --font-headline-md: "Literata", serif;
+  --font-headline-sm: "Literata", serif;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-label-md: "Hanken Grotesk", sans-serif;
+  --font-caption: "Hanken Grotesk", sans-serif;
+
+  /* CORRECTION 2 : Tailles de Texte (Font Sizes)
+    C'est ce qui manquait ! Maintenant les classes "text-display-lg" existent.
+  */
+  --text-display-lg: 3.5rem;      /* ~56px */
+  --text-headline-md: 2rem;       /* ~32px */
+  --text-headline-sm: 1.5rem;     /* ~24px */
+  --text-body-lg: 1.125rem;       /* ~18px */
+  --text-body-md: 1rem;           /* ~16px */
+  --text-label-md: 0.875rem;      /* ~14px */
+  --text-caption: 0.75rem;        /* ~12px */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 3. Enfin, tes classes CSS personnalisées */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.nav-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient-mesh {
+  background-color: #f7fafc;
+  background-image:
+          radial-gradient(at 0% 0%, hsla(214,100%,95%,1) 0, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(214,35%,92%,1) 0, transparent 50%);
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e2e8f0;
 }
