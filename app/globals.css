@@ -24,7 +24,7 @@
   --color-tertiary: #162132;
   --color-surface-container-high: #e5e9eb;
   --color-tertiary-fixed: #d8e3fa;
-  --color-surface-container: #ebeef0;
+  --color-surface-container: #002045;
   --color-on-primary-fixed-variant: #2d476f;
   --color-on-surface: #181c1e;
   --color-on-primary: #ffffff;
@@ -125,6 +125,22 @@
   width: 1px;
   background: #e2e8f0;
 }
+
+@media (prefers-color-scheme: dark) {
+  @supports (color:color-mix(in lab, red, red)) {
+    .dark\:bg-surface-container\/90 {
+      background-color: #002045 !important;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .dark\:bg-surface-container\/90 {
+      background-color: #002045 !important;
+    }
+  }
+}
+}
+
 
 @keyframes scale-in {
   0% {
